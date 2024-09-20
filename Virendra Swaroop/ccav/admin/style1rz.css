@@ -1,0 +1,100 @@
+﻿.page{ 
+  width: auto;  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+  background-color: rgba(230, 230, 230, 0.5);
+  border-radius: 5px;
+  height: auto;
+}
+.text{font-size: 28px;}    
+.text1{font-size: 18px;}    
+.a{border:5px solid black; background:rgba(255,255,120,0.6); width: 70%; height: auto; color: blue; border-radius: 10px; padding: 10px;}
+.a2{border:5px solid black; background:rgba(255,255,120,0.6); width: 70%; height: auto; color: red; border-radius: 10px; padding: 10px;}
+.a1{color: blue;}
+.f1{color: red; font-size: 24px;}
+.t1{
+  border: black; 
+  width:90%; 
+  height: 400px; 
+  color: black;  
+  border-collapse:collapse; 
+  border-spacing:0;
+  display:block;
+  overflow-y:scroll;
+
+}
+  .t1 th{ padding: 2px; font-size: 20; background-color: #4CAF50; color: white; border-color:black;}
+  .t1 td{text-align:center; padding: 2px 5px 2px 10px; font-size: 18; text-align: left; }
+  .t1 tr:hover{background-color:grey; color: white;}
+a{
+  color:green;
+}
+img{
+  width:60%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+ul input{
+  color: white;
+  text-align: center;
+  font-size: 18;
+  padding:5px 20px 5px 20px; 
+  text-decoration: none;
+  background-color: #333;
+ }
+/* Change the link color to #111 (black) on hover */
+
+@media(max-width: 1200px)
+{
+  
+}
+
+@media(max-width: 768px)
+{
+    
+  h2{font-size: 14px;}
+  .page{ width: auto; max-width:920px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-right: 20px;
+  background-color: rgba(230, 230, 230, 0.5);
+  border-radius: 5px;}
+  .text{font-size: 20px;}    
+  .but1{ width: 80%; border-radius: 5px; background-color: white;}
+}
+
+    #myInput {
+  width: 80%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.splbutton {
+  width: 100%; /* Full-width */
+  font-size: 20px; /* Increase font-size */
+  padding: 10px 0px 10px 0px; /* Add some padding */
+  background-color: #00cc66;
+  border-radius: 15px;
+  color: white;
+}

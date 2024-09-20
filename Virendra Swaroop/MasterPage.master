@@ -1,0 +1,894 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dr Virendra-Swarup Education Centre</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="language" content="English" />
+    <meta name="robots" content="index,follow" />
+    <meta name="distribution" content="Global" />
+    <meta name="author" content="Dr Virendra-Swarup Education Centre" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Dr Virendra Swarup Educational Centre is an establishment under the aegis of Dr. Virendra Swarup, who was a parliamentarian of great repute. His dream of educating thousands came true via the inception of Dr Virendra Swarup Educational Foundation in the year 1989 - at Kanpur." />
+    <meta name="keywords" content="Education Centre, School, high school, education, edu, education portal, schooleducation, eduscol, department of education, private school, higher education, board of education, education department, special education, school education, deep learning, education quotes, importance of education, secretary of education, department of state." />
+
+    <link rel='stylesheet' href='plugins/goodlayers-core/plugins/combine/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='plugins/goodlayers-core/include/css/page-builder.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style-core.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/kingster-style-custom.css' type='text/css' media='all' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3Aregular%2Citalic&amp;subset=latin%2Clatin-ext%2Cdevanagari&amp;ver=5.0.3' type='text/css' media='all' />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .footer {
+            /*background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("images/School_Building/banner.jpg");
+            background-size: cover;*/
+            background: #07294D;
+            color: #fff;
+        }
+
+        .second {
+            margin-top: 55px;
+            margin-bottom: 40px;
+            /*color: rgb(206,206,206);*/
+            color: #fff !important;
+            text-align: left;
+        }
+
+            .second h4 {
+                font-size: 20px;
+                letter-spacing: 3px;
+                position: relative;
+                margin-bottom: 20px;
+                font-size: 1.6em;
+                /*color: #fff;*/
+                padding-bottom: 0.5em;
+                font-weight: normal;
+                color: #FFBC09;
+            }
+
+            .second li {
+                list-style: none;
+                /*padding-bottom: 10px;*/
+            }
+
+            .second a, .second2 a {
+                /*color: rgb(206, 206, 206);*/
+                color: #fff !important;
+                text-decoration: none;
+                letter-spacing: 2px;
+                font-size: 14px;
+                transition: 0.2s;
+            }
+
+                .second a:hover, .second2 a:hover {
+                    color: #fff;
+                    transition: 0.2s;
+                    text-shadow: 1px 1px 20px rgba(0,0,0,1);
+                    text-decoration: none;
+                }
+
+        .second2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #fff !important;
+            text-align: left;
+        }
+
+        /* Forth Section Start */
+        .forth {
+            margin-top: 55px;
+            margin-bottom: 40px;
+            color: #fff !important;
+            text-align: left;
+        }
+
+        .footer .link {
+            padding-left: 50px;
+        }
+
+        .forth h4 {
+            font-size: 20px;
+            letter-spacing: 3px;
+            position: relative;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: normal;
+            color: #FFBC09;
+            padding-bottom: 0.5em;
+        }
+
+        .forth li {
+            list-style: none;
+            /*padding-bottom: 10px;*/
+        }
+
+        .forth a {
+            color: #fff !important;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+            .forth a:hover {
+                color: #fff !important;
+                transition: 0.2s;
+                text-shadow: 1px 1px 20px rgba(0,0,0,1);
+                text-decoration: none;
+            }
+        /* Forth Section End */
+
+        .third {
+            margin-top: 55px;
+            margin-bottom: 50px;
+            color: #fff !important;
+            text-align: left;
+        }
+
+            .third h4 {
+                font-size: 20px;
+                letter-spacing: 3px;
+                position: relative;
+                margin-bottom: 20px;
+                font-size: 1.6em;
+                font-weight: normal;
+                color: #FFBC09;
+                padding-bottom: 0.5em;
+            }
+
+            .third li {
+                list-style: none;
+                padding-bottom: 10px;
+            }
+
+            .third a {
+                color: #fff !important;
+                text-decoration: none;
+                letter-spacing: 2px;
+                font-size: 14px;
+                transition: 0.2s;
+            }
+
+        .forth .map {
+            width: 250px;
+            height: 240px;
+        }
+
+        .third a:hover {
+            color: #fff !important;
+            transition: 0.2s;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+
+
+        @media screen and (max-width:1000px) {
+
+
+            .third h4::after {
+                left: 40% !important;
+            }
+        }
+
+        .line {
+            height: 2px;
+            background-color: rgb(206,206,206);
+            width: 100%;
+        }
+
+        .footer .third ul,
+        .footer .second ul,
+        .footer .forth ul {
+            margin-left: 0px !important;
+        }
+
+        .foot-line {
+            border-bottom: 5px solid #07294D;
+            width: 30%;
+        }
+
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu > .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+            }
+
+        .dropdown-menu > li > a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+
+        /* heroshot css start */
+        body {
+            overflow-x: hidden;
+        }
+
+        .Aboutusimg {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            background: #07294D;
+        }
+
+        .Aboutusbreadcrumb {
+            position: absolute;
+            top: 25%;
+            left: 0%;
+        }
+
+        .doubleArrow {
+            background: none !important;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+            .doubleArrow a {
+                color: #fff;
+            }
+
+            .doubleArrow > li + li:before {
+                padding: 0 5px;
+                content: "\00bb\00a0";
+                font-size: 24px;
+                color: #fff;
+            }
+
+            .doubleArrow > .active {
+                color: #FFBC09;
+                font-weight: bold;
+            }
+
+        .AboutProject {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            right: 30%;
+        }
+
+            .AboutProject h1 {
+                font-size: 60px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+                .AboutProject h1:after {
+                    position: absolute;
+                    content: "";
+                    border-bottom: 5px solid #fff;
+                    width: 90%;
+                    bottom: -25px;
+                    left: 0;
+                    right: 0;
+                }
+
+        @media only screen and (max-width: 767px) {
+            .breadcrumb {
+                padding: 0rem !important;
+                margin-bottom: 0rem !important;
+            }
+
+            .forth,
+            .second,
+            .third {
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            .Aboutusbreadcrumb {
+                position: absolute;
+                top: 35%;
+                left: -5%;
+            }
+
+            .forth h4 {
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            .forth li {
+                padding-left: 30px;
+            }
+
+            .second h4 {
+                margin-left: -35px;
+                padding-left: 20px;
+            }
+
+            .third h4 {
+                padding-left: 20px;
+            }
+
+            .con-link {
+                padding-left: 20px;
+            }
+
+            .forth .map {
+                padding-left: 20px;
+                width: 340px;
+            }
+        }
+        /* heroshot css End */
+
+        .para {
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 767px){
+            .kingster-top-bar-left{
+                display: none;
+            }
+
+            body.kingster-body-front .kingster-container {
+                /*max-width: 500px;*/
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .tg-ticker {
+                width: auto;
+                overflow: hidden;
+                padding: 0 0 0 20px !important;
+            }
+
+            #h3_1dd7_10 {
+                font-size: 22px;    
+            }
+
+            .gdlr-core-column-5 {
+                float: left;
+                width: 50% !important;
+            }
+
+            .gdlr-core-column-42 {
+                float: left;
+                width: 100% !important;
+                margin-right: 4px;
+            }
+
+            .tribute .col-lg-4{
+                margin-left: 35px;
+                margin-top: 0px !important;
+                padding-top: 0px !important;
+            }
+
+            .tribute p{
+                padding: 20px;
+            }
+
+            .admin .kingster-page-title-content h1{
+                display: none;
+            }
+
+            .admin2 .kingster-page-title-bottom-gradient {
+                background: none;
+            }
+
+            .lib{
+                display: none;
+            }
+
+            .alumni h3{
+                color: #07294D; 
+                padding-bottom: 20px; 
+                border-bottom: 6px solid #07294D; 
+                text-align: left; 
+                font-size: 23px  !important; 
+                padding-left: 30px; 
+                width: 100% !important;
+            }
+         }
+
+        
+    </style>
+
+    <!-- CSS Links -->
+    <link rel="shortcut icon" href="Images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="home page-template-default page page-id-2039 gdlr-core-body woocommerce-no-js tribe-no-js kingster-body kingster-body-front kingster-full  kingster-with-sticky-navigation  kingster-blockquote-style-1 gdlr-core-link-to-lightbox">
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="kingster-mobile-header-wrap">
+                <div class="kingster-mobile-header kingster-header-background kingster-style-slide kingster-sticky-mobile-navigation " id="kingster-mobile-header">
+                    <div class="kingster-mobile-header-container kingster-container clearfix">
+
+                        <%--Top bar--%>
+                        <div class="kingster-top-bar" style="height: 55px;">
+                            <div class="kingster-top-bar-background" style="background-color: #07294D;"></div>
+                            <div class="kingster-top-bar-container kingster-container ">
+
+                                <div class="kingster-top-bar-container-inner clearfix">
+                                    <div class="kingster-top-bar-left kingster-item-pdlr text-white">
+
+                                        <img src="images/footer/msg.png" id="i_fd84_0" style="height: 25px; width: 25px;" />
+                                        contact@vsec.in 
+                                    <img src="images/footer/Call.png" id="i_fd84_1" style="height: 25px; width: 25px;" />
+                                        0512-2641352/53/54
+
+                                    </div>
+                                    <div class="kingster-top-bar-right kingster-item-pdlr">
+                                        <div class="kingster-top-bar-right-social"></div>
+                                        <a class="kingster-top-bar-right-button mt-1" href="https://vsec.in/ccav/" target="_blank" style="background-color: #fff; color: #07294D; font-weight: bold; font-size: 15px;">Online Fees
+                                        </a>
+
+                                        <div class="kingster-top-bar-right-social"></div>
+                                        <a class="kingster-top-bar-right-button mt-1" href="download.aspx" target="_blank" style="background-color: #fff; color: #07294D; font-weight: bold; font-size: 15px;">Downloads
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="kingster-logo kingster-item-pdlr" style="padding: 0px;">
+
+                            <div class="kingster-logo-inner">
+                                <a class="" href="Default.aspx">
+                                    <img src="images/VSEC_LOGO%20(2).png" style="width: 300px !important;" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="kingster-mobile-menu-right">
+                            <div class="kingster-mobile-menu">
+                                <a class="kingster-mm-menu-button kingster-mobile-menu-button kingster-mobile-button-hamburger" href="#kingster-mobile-menu">
+                                    <span></span>
+                                </a>
+                                <div class="kingster-mm-menu-wrap kingster-navigation-font" id="kingster-mobile-menu" data-slide="right">
+
+                                    <ul id="menu-main-navigation" class="m-menu">
+
+                                        <li class="menu-item menu-item-home menu-item-has-children">
+                                            <a href="Default.aspx">Home</a>
+                                        </li>
+
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="About.aspx" style="pointer-events: none;">About</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="About.aspx">Foundation</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="tribute_Virendra_Swarup.aspx">Tribute to Our Founder
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="tribute_nagendra_swaroop.aspx">Tribute to Dr. Nagendra Swarup
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="principalmsg.aspx">Principal's Message
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Secrecterymsg.aspx">Secretary's Message
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="School_Staff.aspx">School Staff
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="Administrative_Block.aspx">Infrastructure</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="Administrative_Block.aspx">Administration Block</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Auditorium.aspx">Auditoriums</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Library.aspx">Library</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="laboratory.aspx">Laboratory</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Infirmary.aspx">Infirmary</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Sports_and_Playground.aspx">Sports & Playgrounds</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Co_Curricular_Activities.aspx">Co-Curricular Activities</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="prep.aspx">Academics</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="prep.aspx">Pre-Primary</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="primary.aspx">Primary</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Secondary.aspx">Secondary</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="Sn_Secondary.aspx">Senior Secondary</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="House.aspx">Houses</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="photo_gallery.aspx">Gallery</a>
+                                            <%-- <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="photo_gallery.aspx">Picture Gallery</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="photo_gallery.aspx">Current Events</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="media.aspx">Newspaper Clippings</a>
+                                                </li>
+                                            </ul>--%>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="alumni.aspx">Alumni</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="admission_query_form.aspx">Admissions</a>
+                                            <ul class="sub-menu">
+                                                <%--<li class="menu-item">
+                                                    <a href="admission.aspx">Admission Prospectus</a>
+                                                </li>--%>
+                                                <li class="menu-item">
+                                                    <a href="admission_query_form.aspx">Admission Query Form</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="https://vsec.in/ccav/">Online Payment</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="career.aspx">Career</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="Contact.aspx">Contact Us</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kingster-body-outer-wrapper ">
+                <div class="kingster-body-wrapper clearfix  kingster-with-frame">
+
+                    <%--Top bar--%>
+                    <div class="kingster-top-bar" style="height: 55px;">
+                        <div class="kingster-top-bar-background" style="background-color: #07294D;"></div>
+                        <div class="kingster-top-bar-container kingster-container ">
+
+                            <div class="kingster-top-bar-container-inner clearfix">
+                                <div class="kingster-top-bar-left kingster-item-pdlr text-white">
+
+                                    <img src="images/footer/msg.png" id="i_fd84_0" style="height: 25px; width: 25px;" />
+                                    contact@vsec.in 
+                                    <img src="images/footer/Call.png" id="i_fd84_1" style="height: 25px; width: 25px;" />
+                                    0512-2641352/53/54
+
+                                </div>
+                                <div class="kingster-top-bar-right kingster-item-pdlr">
+                                    <div class="kingster-top-bar-right-social"></div>
+                                    <a class="kingster-top-bar-right-button mt-1" href="https://vsec.in/ccav/" target="_blank" style="background-color: #fff; color: #07294D; font-weight: bold; font-size: 15px;">Online Fees
+                                    </a>
+                                </div>
+                                <div class="kingster-top-bar-right kingster-item-pdlr">
+                                    <div class="kingster-top-bar-right-social"></div>
+                                    <a class="kingster-top-bar-right-button mt-1" href="download.aspx" target="_blank" style="background-color: #fff; color: #07294D; font-weight: bold; font-size: 15px;">Downloads
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <%--Header--%>
+                    <header class="kingster-header-wrap kingster-header-style-plain  kingster-style-menu-right kingster-sticky-navigation kingster-style-fixed" data-navigation-offset="75px">
+                        <div class="kingster-header-background"></div>
+                        <div class="kingster-header-container kingster-container-fluid">
+                            <div class="kingster-header-container-inner clearfix">
+                                <div class="kingster-logo  kingster-item-pdlr">
+                                    <div class="kingster-logo-inner">
+                                        <a class="" href="Default.aspx">
+                                            <img src="images/VSEC_LOGO%20(2).png" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="kingster-navigation kingster-item-pdlr clearfix ">
+                                    <div class="kingster-main-menu" id="kingster-main-menu">
+
+                                        <ul id="menu-main-navigation-1" class="sf-menu">
+                                            <li class="menu-item menu-item-home current-menu-item menu-item-has-children kingster-normal-menu">
+                                                <a href="Default.aspx" class="sf-with-ul-pre">Home</a>
+                                            </li>
+
+                                            <li class="menu-item menu-item-has-children kingster-normal-menu">
+                                                <a href="About.aspx" class="sf-with-ul-pre" style="pointer-events: none;">About</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="About.aspx">Foundation</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="tribute_Virendra_Swarup.aspx">Tribute to Our Founder
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="tribute_nagendra_swaroop.aspx">Tribute to Dr. Nagendra Swarup
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="principalmsg.aspx">Principal's Message
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Secrecterymsg.aspx">Secretary's Message
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="School_Staff.aspx">School Staff
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu-item menu-item-has-children kingster-normal-menu">
+                                                <a href="Administrative_Block.aspx" class="sf-with-ul-pre">Infrastructure</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="Administrative_Block.aspx">Administration Block</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Auditorium.aspx">Auditoriums</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Library.aspx">Library</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="laboratory.aspx">Laboratory</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Infirmary.aspx">Infirmary</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Sports_and_Playground.aspx">Sports & Playgrounds</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Co_Curricular_Activities.aspx">Co-Curricular Activities</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu-item menu-item-has-children kingster-normal-menu">
+                                                <a href="prep.aspx" class="sf-with-ul-pre">Academics</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="prep.aspx">Pre-Primary</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="primary.aspx">Primary</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Secondary.aspx">Secondary</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="Sn_Secondary.aspx">Senior Secondary</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="House.aspx">Houses</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu-item kingster-normal-menu">
+                                                <a href="photo_gallery.aspx" class="sf-with-ul-pre">Gallery</a>
+                                                <%--<ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="photo_gallery.aspx">Picture Gallery</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="photo_gallery.aspx">Current Events</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="media.aspx">Newspaper Clippings</a>
+                                                    </li>
+                                                </ul>--%>
+                                            </li>
+
+                                            <li class="menu-item kingster-normal-menu">
+                                                <a href="alumni.aspx">Alumni</a>
+                                            </li>
+
+                                            <li class="menu-item kingster-normal-menu">
+                                                <a href="admission_query_form.aspx" class="sf-with-ul-pre">Admissions</a>
+                                                <ul class="sub-menu">
+                                                    <%--<li class="menu-item">
+                                                        <a href="admission.aspx">Admission Prospectus</a>
+                                                    </li>--%>
+                                                    <li class="menu-item">
+                                                        <a href="admission_query_form.aspx">Admission Query Form</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="https://vsec.in/ccav/">Online Payment</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu-item kingster-normal-menu">
+                                                <a href="career.aspx">Career</a>
+                                            </li>
+
+                                            <li class="menu-item kingster-normal-menu">
+                                                <a href="Contact.aspx">Contact Us</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="kingster-navigation-slide-bar" id="kingster-navigation-slide-bar"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <!-- footer Start-->
+                    <div class="footer">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-3 col-xs-12">
+                                    <div class="forth">
+                                        <h4 style="color: #FFBC09; border-bottom: 3px solid #FFBC09; width: 90%; font-weight: normal;">VSEC Family</h4>
+                                        <ul>
+                                            <li><a href="branches.aspx">Dr VSEC- Sharda Nagar</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- Avadhpuri</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- Shyam Nagar Jr.</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- Shyam Nagar Sr.</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- Panki</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- Farrukhabad</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- Unnao</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- N-Block</a></li>
+                                            <li><a href="branches.aspx">Dr VSEC- Jajmau</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-xs-12 link">
+                                    <div class="second">
+                                        <h4 style="color: #FFBC09; border-bottom: 3px solid #FFBC09; font-weight: normal; width: 50%;">Links</h4>
+                                        <ul>
+                                            <li><a href="About.aspx">About</a></li>
+                                            <li><a href="download.aspx">Examination Syllabus</a></li>
+                                            <li><a href="photo_gallery.aspx">Gallery</a></li>
+                                            <li><a href="admission_query_form.aspx">Admission</a></li>
+                                            <li><a href="Contact.aspx">Contact</a></li>
+                                            <li><a href="admin/admin_login.aspx">Admin Login</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-xs-12">
+                                    <div class="third">
+                                        <h4 style="color: #FFBC09; border-bottom: 3px solid #FFBC09; font-weight: normal; width: 75%;">Contact US</h4>
+                                        <ul class="con-link">
+                                            <li>
+                                                <img src="images/footer/Call.png" style="height: 25px; width: 25px;" />&nbsp; 0512-2641352</li>
+                                            <li>
+                                                <img src="images/footer/msg.png" style="height: 25px; width: 25px;" />&nbsp; contact@vsec.in</li>
+                                            <li>
+                                                <img src="images/footer/pin.png" style="height: 25px; width: 25px;" />
+                                                &nbsp;435-A, H2-Block,
+                                                <br />
+                                                &emsp;&emsp; Kidwai Nagar,
+                                                <br />
+                                                &emsp;&emsp; Kanpur-208011 </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-xs-12">
+                                    <div class="forth">
+                                        <h4 style="color: #FFBC09; border-bottom: 3px solid #FFBC09; font-weight: normal; width: 90%;">Google Map</h4>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3572.7887076881575!2d80.3293185!3d26.4302943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4704df4f0115%3A0x3bb04d22310b29c3!2sDr.%20Virendra%20Swarup%20Education%20Centre!5e0!3m2!1sen!2sin!4v1677636444384!5m2!1sen!2sin" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="line"></div>
+                                    <div class="second2">
+                                        <p class="text-center">Copyright © 2023 Dr. VSEC || All Rights Reserved. || Designed by <a href="https://trianglemind.in/">
+                                            <img src="images/logo.png" style="height: 50px;" /></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- footer End-->
+
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+    <script type="text/javascript">
+        window.addEventListener("DOMContentLoaded", function (event) {
+
+            var currenturl = window.location.pathname.toLowerCase();
+            var allMenuItems = document.getElementById("menu-main-navigation-1").children;
+            for (var i = 0; i < allMenuItems.length; i++) {
+
+                var menuURL = allMenuItems[i].children[0].getAttribute("href").toLowerCase();
+                if (currenturl != '/' && currenturl == '/' + menuURL) {
+                    allMenuItems[i].classList.add('current-menu-item');
+                } else {
+                    allMenuItems[i].classList.remove('current-menu-item');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
